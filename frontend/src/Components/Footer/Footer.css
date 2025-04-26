@@ -29,12 +29,14 @@
   display: flex;
   gap: 20px;
 }
-.footer-icons-container {
+
+.footer-icon-container {
   padding: 10px;
   padding-bottom: 6px;
   background: #fbfbfb;
   border: 1px solid #ebebeb;
 }
+
 .footer-copyright {
   display: flex;
   flex-direction: column;
@@ -45,6 +47,7 @@
   color: #1a1a1a;
   font-size: 20px;
 }
+
 .footer-copyright hr {
   width: 80%;
   border: none;
