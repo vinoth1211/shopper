@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import "./CSS/ShopCategory.css";
-import {ShopContext} from "../Context/ShopContext";
+import { ShopContext } from "../Context/ShopContext";
 import dropdown_icon from "../Components/Assets/dropdown_icon.png";
 import Item from "../Components/Item/Item";
 
 const ShopCategory = (props) => {
-  const {all_product} = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
   return (
     <div className="shop-category">
       <img className="shopCategory-banner" src={props.banner} alt="" />
@@ -18,8 +18,8 @@ const ShopCategory = (props) => {
         </div>
       </div>
       <div className="shopCategory-products">
-        {all_product.map((item,i) => {
-          if (props.category===item.category) {
+        {all_product.map((item, i) => {
+          if (props.category === item.category) {
             return (
               <Item
                 key={i}
@@ -35,9 +35,7 @@ const ShopCategory = (props) => {
           }
         })}
       </div>
-      <div className="shopCategory-loadMore">
-        explore more
-      </div>
+      <div className="shopCategory-loadMore">explore more</div>
     </div>
   );
 };
